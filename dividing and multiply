@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int a,b,sub=0,counter=0;
+cout<<"enter first number";
+cin>>a;
+cout<<"enter second number";
+cin >>b ;
+sub=a-b ;
+while (sub>b)
+{
+    sub=sub-b ;
+    counter+=1;
+}
+if (sub==b)
+{
+    cout << "the rimender not found" << endl ;
+    cout << "the division  is " <<counter+2 ;
+}
+else if (sub<b)
+{
+    cout << "the rimender is " << sub << endl ;
+    cout << "the division is not found" ;
+}
+
+    return 0;
+
+}
