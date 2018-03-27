@@ -1,0 +1,48 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    cout << "Hello Ya User Ya Habibi"<<endl;
+    string text ;
+    cout <<"Enter the name of astrology \n";
+    cin >> text ;
+    if (text=="Arise"){
+        cout << "March 21–April 19";
+    }
+    else if (text=="Taurus"){
+        cout << "April 20–May 20";
+    }
+    else if (text=="Gemini"){
+        cout << "May 21–June 21";
+    }
+    else if (text=="Cancer"){
+        cout << "June 22–July 22" ;
+    }
+    else if (text=="Leo"){
+        cout << "July 23–August 22";
+    }
+    else if (text=="Virgo"){
+        cout << "August 23–September 22";
+    }
+    else if (text=="Libra"){
+        cout << "September 23–October 22";
+    }
+    else if (text=="Scorpio"){
+        cout << "October 23–November 21";
+    }
+    else if (text=="Sagittarius"){
+        cout << "November 22–December 21";
+    }
+    else if (text=="Capricorn"){
+        cout << "December 22–January 19";
+    }
+    else if (text=="Aquarius"){
+        cout << "January 20–February 18";
+    }
+    else if (text=="Pisces"){
+        cout << "February 19–March 20";
+    }
+    return 0;
+}
