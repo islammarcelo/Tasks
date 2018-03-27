@@ -1,0 +1,9 @@
+    int a , b , tamb ;
+    cout << "Enter frist number = " ;
+    cin >> a ;
+    cout << "Enter second number = " ;
+    cin >> b ;
+    tamb = b ;
+    b = a ;
+    a = tamb ;
+    cout << a<< '\t' << b ;
