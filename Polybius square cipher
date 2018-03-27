@@ -1,0 +1,190 @@
+    {
+    cout << "Ahlan Ya User Ya Habibi" ;
+    int choice;
+    string index ;
+    char arr[5][5]=
+    {
+        {'A','B','C','D','E'},
+        {'F','G','H','I','K'},
+        {'L','M','N','O','P'},
+        {'Q','R','S','T','U'},
+        {'V','W','X','Y','Z'}
+    };
+    do
+    {
+        cout<<"\n1-Cipher a message"<<endl;
+        cout<<"2-Decipher a message"<<endl;
+        cout<<"3-End"<<endl;
+        cin >>choice;
+        if (choice==1)
+        {
+
+            string text ;
+            cout <<"Enter Text";
+            cin >> text ;
+
+            for (int i=0; i<text.length(); ++i)
+            {
+
+                for(int l=0; l<5; ++l)
+                {
+                    for (int j=0; j<5; ++j)
+                    {
+                        if (text[i]==arr[l][j])
+                        {
+                            cout <<l<<j<<endl;
+                        }
+                    }
+
+                }
+            }
+        }
+        if (choice==2)
+        {
+            cout<<"Enter Number of Indexes"<<endl;
+            int Size;
+            cin>>Size;
+            string result=" ";
+            for (int i=0; i<Size; i++)
+            {
+                cout<<"\nEnter index "<<endl;
+                int index;
+                cin>>index;
+                if (index==00)
+                {
+                    result=result+'A';
+                }
+                else if (index==01)
+                {
+                    result=result+'B';
+                }
+                else if (index==02)
+                {
+                    result=result+'C';
+
+                }
+                else if (index==03)
+                {
+                    result=result+'D';
+
+                }
+                else if (index==04)
+                {
+                    result=result+'E';
+
+                }
+                else if (index==10)
+                {
+                    result=result+'F';
+
+                }
+                else if (index==11)
+                {
+                    result=result+'G';
+
+                }
+                else if (index==12)
+                {
+                    result=result+'H';
+
+                }
+                else if (index==13)
+                {
+                    result=result+'I';
+
+                }
+                else if (index==14)
+                {
+                    result=result+'K';
+
+                }
+                else if (index==20)
+                {
+                    result=result+'L';
+
+                }
+                else if (index==21)
+                {
+                    result=result+'M';
+
+                }
+                else if (index==22)
+                {
+                    result=result+'N';
+
+                }
+                else if (index==23)
+                {
+                    result=result+'O';
+
+                }
+                else if (index==24)
+                {
+                    result=result+'P';
+
+                }
+                else if (index==30)
+                {
+                    result=result+'Q';
+
+                }
+                else if (index==31)
+                {
+                    result=result+'P';
+
+                }
+                else if (index==32)
+                {
+                    result=result+'S';
+
+                }
+                else if (index==33)
+                {
+
+                    result=result+'T';
+
+                }
+                else if (index==34)
+                {
+                    result=result+'U';
+
+                }
+                else if (index==40)
+                {
+                    result=result+'V';
+
+                }
+                else if (index==41)
+                {
+                    result=result+'X';
+
+                }
+                else if (index==42)
+                {
+                    result=result+'Y';
+
+                }
+                else if (index==43)
+                {
+                    result=result+'W';
+
+                }
+                else if (index==44)
+                {
+                    result=result+'Z';
+
+                }
+
+            }
+            cout<<"\n"<<result;
+        }
+
+
+    }
+    while(choice!=3);
+
+
+
+
+    return 0;
+}}
