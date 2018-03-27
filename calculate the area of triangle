@@ -1,0 +1,7 @@
+ float base , high , area ;
+    cout <<"Enter base = " ;
+    cin >> base ;
+    cout <<"Entar high = " ;
+    cin >> high ;
+    area =(base * high)/2 ;
+    cout << "area = " << area ;
